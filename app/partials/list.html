@@ -1,0 +1,37 @@
+  <table>
+    <thead>
+      <tr><th>Sn No.</th>
+      <th>First Name</th>
+      <th>last Name</th>
+      <th>OSS Id</th>
+      <th>Email Id</th>
+      <th>Address</th>
+      <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="driver in driversList | filter: nameFilter">
+        <td>{{$index + 1}}</td>
+        <td>{{driver.fName}}</td>
+        <td>{{driver.lName}}</td>
+        <td>{{driver.ossId}}</td>
+        <td>{{driver.email}}</td>
+        <td>{{driver.address}}</td>
+        <td>{{driver.gender}}</td>
+      </tr>
+    </tbody>
+  </table>
+      <form novalidate class="simple-form" ng-submit="addTodo()" name="form">
+        First Name: <input type="text" ng-model="user.fName" name="firstName" required="" ng-model-instant><br>
+        <div ng-show="form.$submitted || form.firstName.$touched">
+      <div ng-show="form.firstName.$error.required">Tell us your name.</div>
+    </div>
+        Last Name: <input type="text" ng-model="user.lName"><br>
+        OSSID: <input type="text" ng-model="user.ossId"><br>
+        Email: <input type="email" ng-model="user.email"><br>
+        Address: <input type="text" ng-model="user.address"><br>
+        Gender: <input type="radio" ng-model="user.gender" value="male" />male
+    	<input type="radio" ng-model="user.gender" value="female" />female<br />
+        <input class="btn-primary" type="submit" value="add"><br/>
+        Typing... {{givenName}}
+      </form>

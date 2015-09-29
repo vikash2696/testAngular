@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+body{
+	background-color:#F6F6F6;
+}
+.simple-form input.ng-invalid.ng-touched {
+    background-color: #FA787E;
+  }
+
+  .simple-form input.ng-valid.ng-touched {
+    background-color: #78FA89;
+  }
+  .header{
+	background-color: #353535;
+  	min-height:60px;
+  	width:100%;
+  }
+  .sub-header {
+	background-color: #0072AB;
+  	min-height:30px;
+  	width:100%;
+  	margin-top: -20px;
+  }
+  #search{
+	width:15%;
+  	height:27px;
+  	float:right;	
+  }
+  .logo{
+	float:left;
+  	margin-left:50px;
+  	margin-bottom:10px;
+  	margin-top:10px;
+  }
+  .menu-tab{
+	margin-bottom:10px;
+  	margin-top:10px;
+  }

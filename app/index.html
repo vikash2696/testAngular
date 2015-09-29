@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learning Angular</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/main.css"/>
+ 
+</head>
+<body ng-app="testApp">
+<nav class="navbar navbar-inverse">
+<ul class="nav nav-tabs menu-tab">
+<a class="logo" href="#">
+        <img alt="Brand" src="img/logo.png">
+      </a>
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+  <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+
+  <div class="form-group">
+    <input type="text" ng-model="nameFilter" id="search" class="form-control" placeholder="Search">
+  </div></ul>
+</nav>
+<div class="sub-header">
+</div>
+ <div ng-view=""></div>
+    <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+ <script src="bower_components/angular.min.js"></script>
+  <script src="bower_components/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services/services.js"></script>
+  <script src="js/controllers/controllers.js"></script>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+</body>
+</html>
